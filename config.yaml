@@ -1,0 +1,19 @@
+env: development
+app:
+  port: 8080
+  name: ledger-management
+db:
+  postgres:
+    host: localhost
+    port: 5432
+    username: postgres
+    password: postgres
+    name: ledger_service
+  mongo:
+    uri: mongodb://localhost:27017/transaction_logs 
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  queue: ledger_queue
